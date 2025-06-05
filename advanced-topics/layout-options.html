@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/assets/images/verovio-logo-big.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="/assets/css/bootstrap/css/bootstrap.min.css" type="text/css" /><!-- Optional theme -->
+        <link rel="stylesheet" href="/assets/css/bootstrap/css/bootstrap-theme.min.css" type="text/css" />
+        <link rel="stylesheet" href="/assets/css/fileinput.min.css" />
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/assets/css/syntax.css" />
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/assets/css/verovio.css" />
+        <link rel="stylesheet" href="/assets/css/midiplayer.css" />
+
+        <link rel="stylesheet" href="/css/verovio-site.css" />
+
+        <script src="/assets/javascript/jquery-3.6.0.min.js"></script>
+        <script src="/assets/javascript/bootstrap.min.js"></script>
+
+        <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Reference book for Verovio | Everything you need to use the Verovio music notation engraving library</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Reference book for Verovio" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Everything you need to use the Verovio music notation engraving library" />
+<meta property="og:description" content="Everything you need to use the Verovio music notation engraving library" />
+<meta property="og:site_name" content="Reference book for Verovio" />
+<meta property="og:image" content="https://book.verovio.org/images/card.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-06-05T13:59:59+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://book.verovio.org/images/card.png" />
+<meta property="twitter:title" content="Reference book for Verovio" />
+<meta name="twitter:site" content="@" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-06-05T13:59:59+00:00","datePublished":"2025-06-05T13:59:59+00:00","description":"Everything you need to use the Verovio music notation engraving library","headline":"Reference book for Verovio","image":"https://book.verovio.org/images/card.png","mainEntityOfPage":{"@type":"WebPage","@id":"/advanced-topics/layout-options.html"},"url":"/advanced-topics/layout-options.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    </head>
+    <body>
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+     <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+            <a class="navbar-brand logo-nav" href="https://www.verovio.org/index.xhtml">
+                <img alt="Verovio logo" src="/assets/images/verovio-fadded-50.png" />
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li >
+                    <a href="https://www.verovio.org/index.xhtml">Homepage</a>
+                </li>
+                <li class="active">
+                    <a href="https://book.verovio.org/">Reference book</a>
+                </li>
+                <li >
+                    <a href="https://www.verovio.org/musicxml.html">Online tools</a>
+                </li>
+                <li>
+                    <a class="image" href="https://github.com/rism-digital/verovio"><img alt="Verovio logo" src="/assets/images/github-logo.png" /></a>
+                </li>
+              </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+        <div class="top-header"> 
+    <div class="container" style="color: #eee; height: 140px; padding-top: 5px;">
+        <h1 style="color: #eee;" class="hidden-print hidden-xs">A music notation engraving library</h1> 
+        <h3 style="color: #eee;" class="hidden-print visible-xs">A music notation engraving library</h3> 
+        <p class="hidden-print">Designed for the Music Encoding Initiative - Fast - Light - Flexible - No dependencies</p>
+    </div>
+</div>
+
+
+        <div class="container with-footer">
+
+            
+
+
+
+<div class="row">
+    <div class="col-md-3 sidebar-offcanvas" id="sidebar">
+        <div class="toc-group">
+            <div>
+
+    <a class="toc-item" href="/introduction/">Introduction</a>
+    
+
+    <a class="toc-item" href="/first-steps/">Tutorial 1: First Steps</a>
+    
+
+    <a class="toc-item" href="/interactive-notation/css-and-svg.html">Tutorial 2: Interactive notation</a>
+    
+
+    <a class="toc-item" href="/advanced-topics/">Beyond tutorials: Advanced topics</a>
+    
+        
+        
+<a class="toc-item toc-section " href="/advanced-topics/">Introduction</a>
+    
+
+<a class="toc-item toc-section " href="/advanced-topics/internal-structure.html">Internal structure</a>
+    
+
+<a class="toc-item toc-section " href="/advanced-topics/controlling-the-svg-output.html">Controlling the SVG output</a>
+    
+
+<a class="toc-item toc-section selected" href="/advanced-topics/layout-options.html"></a>
+    
+        
+        
+<a class="toc-item toc-subsection" href="#output-layout">Output layout</a>
+
+<a class="toc-item toc-subsection" href="#content-spacing">Content spacing</a>
+
+<a class="toc-item toc-subsection" href="#staff-and-system-spacing">Staff and system spacing</a>
+
+<a class="toc-item toc-subsection" href="#vertical-justification">Vertical justification</a>
+
+<a class="toc-item toc-subsection" href="#generating-single-system-incipits">Generating single-system incipits</a>
+
+<a class="toc-item toc-subsection" href="#font-and-styling">Font and styling</a>
+
+    
+
+<a class="toc-item toc-section " href="/advanced-topics/smufl.html">SMuFL fonts</a>
+    
+
+<a class="toc-item toc-section " href="/advanced-topics/transposition.html">Transposition</a>
+    
+
+<a class="toc-item toc-section " href="/advanced-topics/mensural-notation.html">Mensural notation</a>
+    
+
+<a class="toc-item toc-section " href="/advanced-topics/expansions.html">Repetition expansion</a>
+    
+
+    
+
+    <a class="toc-item" href="/toolkit-reference/input-formats.html">Toolkit Reference</a>
+    
+
+    <a class="toc-item" href="/installing-or-building-from-sources/command-line.html">Installing or building from sources</a>
+    
+
+    <a class="toc-item" href="/contributing/guidelines.html">Contributing</a>
+    
+
+</div>
+            <div id="website-search-form" class="toc-item search-form">
+    
+    <form action="/search.html">
+        <div class="form-group">
+            <input id="website-search" class="form-control" type="text" name="q" placeholder="Search the reference book ...">
+        </div>
+        <button type="submit" class="btn btn-small">Search</button>
+    </form>
+</div>
+
+
+        </div>
+    </div>
+
+    <div class="col-md-9" id="content">
+        
+        <a class="hidden-print" href="https://github.com/rism-digital/verovio-reference-book/edit/master/_book/04-advanced-topics/03-layout-options.md"><button class="btn btn-xs pull-right">Edit this page</button></a>
+        
+        
+        <h2></h2>
+        <h3 id="output-layout">Output layout</h3>
+
+<p>By default, Verovio generates an output where the content is organized in pages, which size can be changed with the <code class="language-plaintext highlighter-rouge">--page-height</code> and <code class="language-plaintext highlighter-rouge">--page-width</code> options. The content of the music will laid out on one or more pages. It is possible to adjust the option <code class="language-plaintext highlighter-rouge">--breaks</code> to control how the layout is organized, namely where system and page breaks occur.</p>
+
+<p>By setting the option <code class="language-plaintext highlighter-rouge">--breaks</code> to <code class="language-plaintext highlighter-rouge">none</code>, no system and page breaks will occur, and Verovio will output a single system with the entire music content. With this option, the page width will be adjusted (e.g., increased) automatically to ensure that it can contain the entire content. Be aware that this can produce very large files, regarding both the dimension of the SVG image and the actual file size.</p>
+
+<h3 id="content-spacing">Content spacing</h3>
+
+<p>The spacing of the rhythmic values (notes and rests) is adjusted based on their durations, each value taking a bit more space than the next shorter value. This is the default output:</p>
+
+<p>[SVG file is missing and need to be generated]</p>
+
+<p>The spacing can be controlled with <code class="language-plaintext highlighter-rouge">--spacing-linear</code> and <code class="language-plaintext highlighter-rouge">--spacing-non-linear</code> options. In general, if one of them is increased, the other should be decrease not to have an exaggeratedly expanded - or the other way around. The default values are <code class="language-plaintext highlighter-rouge">0.25</code> for <code class="language-plaintext highlighter-rouge">--spacing-linear</code> and <code class="language-plaintext highlighter-rouge">0.6</code> for <code class="language-plaintext highlighter-rouge">--spacing-non-linear</code>. If you want all measures to have the same width, which means making no spacing difference according to the duration of the notes and rests, the <code class="language-plaintext highlighter-rouge">--spacing-non-linear</code> value needs to be set to <code class="language-plaintext highlighter-rouge">1.0</code>. This is what Verovio will produce together with <code class="language-plaintext highlighter-rouge">--spacing-linear</code> set to <code class="language-plaintext highlighter-rouge">0.03</code>:</p>
+
+<p>[SVG file is missing and need to be generated]</p>
+
+<p>Alternatively, if <code class="language-plaintext highlighter-rouge">--spacing-non-linear</code> is reduced to <code class="language-plaintext highlighter-rouge">0.35</code> and <code class="language-plaintext highlighter-rouge">--spacing-linear</code> increased to <code class="language-plaintext highlighter-rouge">1.0</code>, there will be less difference in spacing between notes of different durations:</p>
+
+<p>[SVG file is missing and need to be generated]</p>
+
+<h3 id="staff-and-system-spacing">Staff and system spacing</h3>
+
+<p>Staff and system spacing in Verovio is controlled by two options, namely <code class="language-plaintext highlighter-rouge">--spacing-staff</code> and <code class="language-plaintext highlighter-rouge">--spacing-system</code>. Their value is given in MEI units and the default value is <code class="language-plaintext highlighter-rouge">12</code> units. Since a five line staff is 8 units, it means the default spacing between two staves will be one and a half staff height, and an additional equivalent system spacing between two systems.</p>
+
+<p>Verovio adds half a staff space above the first staff of a system and below the last one. This is the illustrated below with the default spacing options.</p>
+
+<p><img src="/images/advanced-topics/layout-options/spacing-01.png" alt="spacing 01" class="img-responsive example-80" /></p>
+
+<p>When removing the top and bottom page margins (<code class="language-plaintext highlighter-rouge">--page-margin-top 0</code> and  <code class="language-plaintext highlighter-rouge">--page-margin-bottom 0</code>), there will be only the half staff space above and below.</p>
+
+<p><img src="/images/advanced-topics/layout-options/spacing-02.png" alt="spacing 02" class="img-responsive example-80" /></p>
+
+<p>To remove the spacing above and below the staff completely, the staff space has to be removed with <code class="language-plaintext highlighter-rouge">--spacing-staff 0</code>.</p>
+
+<p><img src="/images/advanced-topics/layout-options/spacing-03.png" alt="spacing 03" class="img-responsive example-80" /></p>
+
+<p>The half staff space above and below the staff means that having music content above or below the staff line does not change vertical positioning when the content fits within that space. Because the default value for <code class="language-plaintext highlighter-rouge">--spacing-staff</code> is <code class="language-plaintext highlighter-rouge">12</code> MEI units, it means that up to 3 staff spaces (e.g., up to a D6 with a G-2 clef) will fit in that space.</p>
+
+<p><img src="/images/advanced-topics/layout-options/spacing-04.png" alt="spacing 04" class="img-responsive example-80" /></p>
+
+<p>When the content takes more space than half a staff spacing, then space is added. On a page, it means that the position of the staff will be lowered accordingly.</p>
+
+<p><img src="/images/advanced-topics/layout-options/spacing-05.png" alt="spacing 05" class="img-responsive example-80" /></p>
+
+<p>When there is a header or a footer, additional spacing is added between between them and the music content. By default, the spacing is <code class="language-plaintext highlighter-rouge">2.0</code> MEI units. The value can be adjusted with the options  <code class="language-plaintext highlighter-rouge">--bottom-margin-pg-header</code> or  <code class="language-plaintext highlighter-rouge">--top-margin-pg-footer</code>.</p>
+
+<p><img src="/images/advanced-topics/layout-options/spacing-06.png" alt="spacing 06" class="img-responsive example-80" /></p>
+
+<h3 id="vertical-justification">Vertical justification</h3>
+
+<p>When producing page-like layouts, it is often desirable to justify the content vertically in order to have the staves distributed on the page in a balance way.</p>
+
+<p>By default, no vertical justification is applied, and rendering a page will place all systems at the top of the page. The spacing of the staff and the system will be simply determined by the <code class="language-plaintext highlighter-rouge">--spacing-staff</code> and <code class="language-plaintext highlighter-rouge">--spacing-system</code> values.</p>
+
+<p>[SVG file is missing and need to be generated]</p>
+
+<p>To have the content justified, the option <code class="language-plaintext highlighter-rouge">--justify-vertically</code> has to be enabled.</p>
+
+<p>[SVG file is missing and need to be generated]</p>
+
+<p>This option applies justification over all staff spaces in the score in a linear way. Verovio allows for a more fine-tuned justification with different spacing parameters for staves grouped by a brace or a bracket. The options to adjust are <code class="language-plaintext highlighter-rouge">--justification-brace-group</code>, <code class="language-plaintext highlighter-rouge">--justification-bracket-group</code>, <code class="language-plaintext highlighter-rouge">--justification-staff</code> and <code class="language-plaintext highlighter-rouge">--justification-system</code>. Each of these take a parameter from <code class="language-plaintext highlighter-rouge">0.0</code> to <code class="language-plaintext highlighter-rouge">10.0</code> acting as a factor on the justification applied. The default value is <code class="language-plaintext highlighter-rouge">1.0</code> for all of them.</p>
+
+<p>Setting one of these options to <code class="language-plaintext highlighter-rouge">0.0</code> will result in no justification space added between the corresponding staves. For example, the same example as above rendered with <code class="language-plaintext highlighter-rouge">--justification-brace-group 0.0</code> will have a layout where the staff spacing between the staves in the brace groups remains unchanged.</p>
+
+<p>[SVG file is missing and need to be generated]</p>
+
+<p>Adding <code class="language-plaintext highlighter-rouge">--justification-bracket-group 0.2</code> with reduce the space between the staves in the bracket group, even though still changing it be cause the value is not <code class="language-plaintext highlighter-rouge">0.0</code>. The spacing between the other staves and the systems is consequently increased.</p>
+
+<p>[SVG file is missing and need to be generated]</p>
+
+<h3 id="generating-single-system-incipits">Generating single-system incipits</h3>
+
+<p>Generating single-system incipits can be done with the options <code class="language-plaintext highlighter-rouge">--page-height 100</code> and <code class="language-plaintext highlighter-rouge">--adjust-page-height</code> enabled. This way, the first page will contain only the first system of music. Its width can be set as desired with <code class="language-plaintext highlighter-rouge">--page-width</code>, here with <code class="language-plaintext highlighter-rouge">1500</code>:</p>
+
+<p>[SVG file is missing and need to be generated]</p>
+
+<h3 id="font-and-styling">Font and styling</h3>
+
+<p>It is possible to load a style file, as specified in the SMuFL engraving defaults:</p>
+
+<p>[SVG file is missing and need to be generated]</p>
+
+
+    </div>
+</div>
+
+<script src="/js/highlighter.js"></script>
+
+<script>
+    let options = {
+        rootMargin: '60px'
+    }
+    function adjustSideBar() {
+        elem = document.getElementsByClassName("toc-group")[0];
+        // 992 is the breakpoint for which the sidebar moves to the top; 35 is the footer height
+        elem.style.height = (window.innerWidth < 992) ? "" : `${window.innerHeight - elem.offsetTop - 35}px`;
+    }
+
+    window.onresize = function () {
+        adjustSideBar();
+    };
+    window.onload = function() {
+        adjustSideBar();
+    };
+
+    window.addEventListener('DOMContentLoaded', () => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                const id = entry.target.getAttribute('id');
+                if (entry.intersectionRatio > 0) {
+                    // First deselect everything
+                    sections = document.querySelectorAll(`.toc-group a.toc-subsection`);
+                    for (i = 0; i < sections.length; i++){
+                        sections[i].classList.remove('selected');
+                    }
+                    // The one entering is marked as .on-screen
+                    document.querySelector(`.toc-group a[href="#${id}"]`).classList.add('on-screen');
+                    // Select the first that in .on-screen
+                    sections = document.querySelectorAll(`.toc-group a.toc-subsection.on-screen`);
+                    sections[0].classList.add('selected');
+
+                } else {
+                    leaving = document.querySelector(`.toc-group a[href="#${id}"]`)
+                    // Remove the .on-screen from the one leaving
+                    leaving.classList.remove('on-screen');
+                    sections = document.querySelectorAll(`.toc-group a.toc-subsection.on-screen`);
+                    // If no other one is on screen, just leave things as they are
+                    if (sections.length > 0) {
+                        // Otherwise de-select the one that is leaving
+                        leaving.classList.remove('selected');
+                        // Selected the first .on-screen one and de-select the other ones
+                        sections[0].classList.add('selected');
+                        for (i = 1; i < sections.length; i++){
+                            console.log(sections[i].getAttribute('id'))
+                            sections[i].classList.remove('selected');
+                        }
+                    }
+                }
+            });
+        }, options);
+
+        // Track all sections that have an `id` applied
+        document.querySelectorAll('h3[id]').forEach((section) => {
+            observer.observe(section);
+        });
+
+    });
+
+    let params = new URLSearchParams( document.location.search.substring( 1 ) );
+    if ( params.get( "q" ) )
+    {
+        let query = params.get( "q" );
+        // Also make sure we preserve the query term in the form in the sidebar
+        document.getElementById("website-search").value = query;
+        // Preserve the original query for logging
+        let query_term = query;
+        // Remove quotes and trim
+        query = query.replace(/\'|\"/g, ' ');
+        query = query.trim();
+        // Make it an AND query
+        console.log(query);
+
+        let terms = query.split(' ');
+        var container = document.getElementById("content");
+
+        for (var i = 0; i < terms.length; i++) {
+            InstantSearch.highlight(container, terms[i]);
+        }
+    }
+
+</script>
+
+
+
+        </div>
+
+        <footer class="hidden-print footer navbar-fixed-bottom">
+            <p>
+                
+            </p>
+        </footer>
+
+        <script>
+        //<![CDATA[
+            $(document).ready(function() {
+
+                
+
+            });
+        //]]>
+        </script>
+    </body>
+</html>
