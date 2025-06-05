@@ -212,4 +212,6 @@ Generating single-system incipits can be done with the options `--page-height 10
 
 ### Font and styling
 
+It is possible to load a style file, as specified in the SMuFL engraving defaults:
+
 {% include music-notation-only example="engraving-defaults" class="centered" %}
