@@ -88,6 +88,50 @@ examples:
         pageHeight: 100
         pageWidth: 1500
 
+    - name: engraving-defaults
+      url: https://kern.humdrum.org/cgi-bin/ksdata?l=users/craig/classical/bach/371chorales&file=chor010.krn&f=kern
+      options:
+        breaks: 'auto'
+        pageHeight: 300
+        adjustPageHeight: True
+        font: 'Bravura
+        engravingDefaults: '{
+		"arrowShaftThickness":0.16,
+		"barlineSeparation":0.4,
+		"beamSpacing":0.25,
+		"beamThickness":0.5,
+		"bracketThickness":0.5,
+		"dashedBarlineDashLength":0.5,
+		"dashedBarlineGapLength":0.25,
+		"dashedBarlineThickness":0.16,
+		"hBarThickness":1.0,
+		"hairpinThickness":0.16,
+		"legerLineExtension":0.4,
+		"legerLineThickness":0.16,
+		"lyricLineThickness":0.16,
+		"octaveLineThickness":0.16,
+		"pedalLineThickness":0.16,
+		"repeatBarlineDotSeparation":0.16,
+		"repeatEndingLineThickness":0.16,
+		"slurEndpointThickness":0.1,
+		"slurMidpointThickness":0.22,
+		"staffLineThickness":0.13,
+		"stemThickness":0.12,
+		"subBracketThickness":0.16,
+		"textEnclosureThickness":0.16,
+		"textFontFamily":[
+			"Academico",
+			"Century Schoolbook",
+			"Edwin",
+			"serif"
+		],
+		"thickBarlineThickness":0.5,
+		"thinBarlineThickness":0.16,
+		"tieEndpointThickness":0.1,
+		"tieMidpointThickness":0.22,
+		"tupletBracketThickness":0.16
+	}'
+
 ---
 
 ### Output layout
@@ -165,3 +209,7 @@ Adding `--justification-bracket-group 0.2` with reduce the space between the sta
 Generating single-system incipits can be done with the options `--page-height 100` and `--adjust-page-height` enabled. This way, the first page will contain only the first system of music. Its width can be set as desired with `--page-width`, here with `1500`:
 
 {% include music-notation-only example="incipit" %}
+
+### Font and styling
+
+{% include music-notation-only example="engraving-defaults" class="centered" %}
