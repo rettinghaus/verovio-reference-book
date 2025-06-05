@@ -83,6 +83,8 @@
   single-system incipits
 "/advanced-topics/smufl.html": SMuFL fonts
 "/advanced-topics/smufl.html#music-symbols-in-text": Music symbols in text
+"/advanced-topics/smufl.html#use-alternate-smufl-glyphs": Use alternate SMuFL glyphs
+"/advanced-topics/smufl.html#custom-fonts": Custom fonts
 "/advanced-topics/transposition.html": Transposition
 "/advanced-topics/transposition.html#transposition-by-chromatic-interval": Transposition
   by chromatic interval
@@ -95,6 +97,8 @@
 "/advanced-topics/mensural-notation.html#duration-alignment": Duration alignment
 "/advanced-topics/mensural-notation.html#layout": Layout
 "/advanced-topics/mensural-notation.html#ligatures": Ligatures
+"/advanced-topics/mensural-notation.html#alignment-with-cmn": Alignment with CMN
+"/advanced-topics/expansions.html": Repetition expansion
 "/toolkit-reference/input-formats.html": Input formats
 "/toolkit-reference/input-formats.html#mei": MEI
 "/toolkit-reference/input-formats.html#humdrum": Humdrum
@@ -232,7 +236,7 @@
   the test-suite
 "/contributing/workflow.html#what-to-expect-with-an-open-issue": What to expect with
   an open issue
-"/contributing/generate-code-with-libmei.html": Generate code with libMEI
+"/contributing/generate-code-with-libmei.html": Generate code with LibMEI
 "/contributing/generate-code-with-libmei.html#generating-libmei": Generating LibMEI
 "/contributing/generate-code-with-libmei.html#customization": Customization
 "/contributing/adding-smufl-glyphs.html": Adding SMuFL glyphs
