@@ -734,6 +734,7 @@ The toolkit can be used to validate Plaine & Easie input data with the `Validate
 The JSON object can contain one or more validation messages. When a global input error is encountered (e.g, `data` is missing in the input), a single object is returned. Otherwise, the object is structured with keys corresponding to the JSON input keys (`clef`, `keysig`, `timesig` and `data`). Each key can have one single validation message, except for `data` that contains an array of one or more messages. Only keys for which a validation message is given will exist in the validation object. In non-pendantic mode, syntax problems are marked as `warning` as long as parsing can continue.
 
 Each validation message is structured as follow:
+
 ```json
 {
   "column": 0,
@@ -753,6 +754,7 @@ Description of the values:
 Whenever the error message contains a string interpolation `%s`, then the json message also contains a `value` key with the value to be used for the interpolation.
 
 Here is an example of invalid input data and the object returned by the validation call:
+
 ```json
 { 
     "clef": "GG2",
@@ -799,7 +801,7 @@ Let's start with a simple little tune.
 
 {% assign abc = page.examples | where: "name", "abc-01" | first %}
 
-```
+```text
 {{ abc.inline }}
 ```
 
@@ -811,7 +813,7 @@ Now let's add a literal tempo as well as some grace notes and chord symbols. Dyn
 
 {% assign abc = page.examples | where: "name", "abc-03" | first %}
 
-```
+```text
 {{ abc.inline }}
 ```
 
@@ -821,7 +823,7 @@ With the option `--breaks: 'encoded'` Verovio keeps the encoded layout, as you c
 
 {% assign abc = page.examples | where: "name", "abc-04" | first %}
 
-```
+```text
 {{ abc.inline }}
 ```
 
@@ -831,7 +833,7 @@ Alternatively it is always possible to suppress score line-breaks. Meter changes
 
 {% assign abc = page.examples | where: "name", "abc-05" | first %}
 
-```
+```text
 {{ abc.inline }}
 ```
 
@@ -841,7 +843,7 @@ Alternatively it is always possible to suppress score line-breaks. Meter changes
 
 {% assign abc = page.examples | where: "name", "abc-06" | first %}
 
-```
+```text
 {{ abc.inline }}
 ```
 
@@ -853,7 +855,7 @@ Verovio correctly differentiates between ties and slurs.
 
 {% assign abc = page.examples | where: "name", "abc-07" | first %}
 
-```
+```text
 {{ abc.inline }}
 ```
 
@@ -863,7 +865,7 @@ Verovio correctly differentiates between ties and slurs.
 
 {% assign abc = page.examples | where: "name", "abc-08" | first %}
 
-```
+```text
 {{ abc.inline }}
 ```
 
@@ -873,7 +875,7 @@ Verovio correctly differentiates between ties and slurs.
 
 {% assign abc = page.examples | where: "name", "abc-09" | first %}
 
-```
+```text
 {{ abc.inline }}
 ```
 
